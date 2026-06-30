@@ -1,0 +1,11 @@
+name: 7030_class_1
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - ipykernel
+  - r-base
+  - r-irkernel
