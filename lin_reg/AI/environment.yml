@@ -1,14 +1,15 @@
-name: 7030_class_1
+name: lin_reg_env
 channels:
-  - bioconda
   - conda-forge
   - defaults
 dependencies:
   - python=3.10
   - jupyterlab
   - ipykernel
+  - nbconvert
   - r-base
   - r-irkernel
+  - r-ggplot2
   - pandas
   - matplotlib
   - scikit-learn
