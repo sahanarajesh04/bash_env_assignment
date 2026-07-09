@@ -1,6 +1,6 @@
 # Linear Regression Tutorial
 
-This folder contains a paired Python and R workflow for simple linear regression on the `regression_data.csv` dataset. The project includes interactive Jupyter notebooks, exported HTML reports, and standalone command-line scripts.
+This folder (`lin_reg/AI`) contains a paired Python and R workflow for simple linear regression on the `regression_data.csv` dataset. The project includes interactive Jupyter notebooks, exported HTML reports, and standalone command-line scripts.
 
 ## Dataset
 
@@ -55,14 +55,15 @@ Build equivalent linear regression applications in Python and R that:
 
 ## Running the Notebooks
 
-From the `lin_reg` directory:
+From the `lin_reg/AI` directory:
 
 ```bash
+cd lin_reg/AI
 jupyter lab python_lin_reg.ipynb
 jupyter lab r_lin_reg.ipynb
 ```
 
-Make sure the working directory is `lin_reg` so the notebooks can find `regression_data.csv`.
+Make sure the working directory is `lin_reg/AI` so the notebooks can find `regression_data.csv`.
 
 ## Running the CLI Scripts
 
@@ -71,12 +72,14 @@ Both scripts accept three arguments: `<filename> <x_column> <y_column>`.
 **Python**
 
 ```bash
+cd lin_reg/AI
 python python_lin_reg.py regression_data.csv YearsExperience Salary
 ```
 
 **R**
 
 ```bash
+cd lin_reg/AI
 Rscript r_lin_reg.r regression_data.csv YearsExperience Salary
 ```
 
@@ -100,6 +103,7 @@ The exported HTML notebooks and PNG outputs document the full analysis for revie
 To regenerate HTML exports from the notebooks:
 
 ```bash
+cd lin_reg/AI
 jupyter nbconvert --to html python_lin_reg.ipynb
 jupyter nbconvert --to html r_lin_reg.ipynb
 ```
